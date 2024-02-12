@@ -31,7 +31,7 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
 
-@app.route("/commit/")
+@app.route("/commits/")
 def moncommit():
     return render_template("commit.html")
 
