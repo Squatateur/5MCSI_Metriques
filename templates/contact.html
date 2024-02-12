@@ -2,32 +2,31 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Formulaire Coloré</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire et Profil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #e8b600; font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-
-    <div style="background-color: white; padding: 20px; border-radius: 10px; display: inline-block; text-align: left;">
-        <h2 style="color: #065535; text-align: center;">Laissez-nous un Message</h2>
-        <form>
-            <div style="margin-bottom: 15px;">
-                <label for="nom" style="color: #333;">Nom</label>
-                <input type="text" id="nom" name="nom" style="width: calc(100% - 22px); padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ddd;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="prenom" style="color: #333;">Prénom</label>
-                <input type="text" id="prenom" name="prenom" style="width: calc(100% - 22px); padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ddd;">
-            </div>
-            <div style="margin-bottom: 15px;">
-                <label for="message" style="color: #333;">Message</label>
-                <textarea id="message" name="message" style="width: calc(100% - 22px); padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ddd; height: 100px;"></textarea>
-            </div>
-            <button type="submit" style="background-color: #ff007f; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Envoyer</button>
+<body>
+    <div class="container">
+        <form id="contact-form">
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" required>
+            
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Envoyer</button>
         </form>
+
+        <div class="profile-section">
+            <label for="profile-name">TINAZ Jules :</label>
+            <input type="text" id="profile-name" name="profile-name" required>
+
+            <img src="orang-outan_stylax.jpg" alt="Image de profil" id="profile-picture">
+        </div>
     </div>
-
-    <!-- Remplacez 'your-gif-url.gif' par l'URL de votre GIF -->
- <iframe src="https://giphy.com/embed/gdNasnNQD4h21SMBki" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Friends-friends-tv-the-one-where-rosita-dies-gdNasnNQD4h21SMBki">via GIPHY</a></p>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWp1Y21lZW50dDEwNnc1cnNjZGpycDh0bTNpaHVnZWxla2poZjl0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ju7l5y9osyymQ/giphy.gif"margin-top: 20px; width: 100%; max-width: 300px;">
-
 </body>
 </html>
