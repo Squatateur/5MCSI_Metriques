@@ -37,7 +37,7 @@ def monhisto():
 
 @app.route("/commits/")
 def moncommit():
-    return render_template("commit.html")
+    return "Coucou"
 
 if __name__ == "__main__":
   app.run(debug=True)
