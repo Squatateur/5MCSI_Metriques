@@ -31,13 +31,13 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
 
-@app.route("/histogramme/")
-def monhisto():
-    return render_template("histo.html")
-
 @app.route("/commit/")
 def moncommit():
     return render_template("commit.html")
+
+@app.route("/histogramme/")
+def monhisto():
+    return render_template("histo.html")
 
 if __name__ == "__main__":
   app.run(debug=True)
