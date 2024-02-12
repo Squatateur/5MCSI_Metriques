@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre le formulaire et la section de profil */
+}
+
+#contact-form,
+.profile-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact-form {
+    flex: 1;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#contact-form label,
+.profile-section label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea,
+.profile-section input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#profile-picture {
+    width: 100%; /* Ajustez la largeur pour correspondre au formulaire */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 8px;
+}
